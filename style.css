@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
+
+header {
+     background: linear-gradient(transparent, transparent 90%, white), url("images/main.jpg"); 
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    height: 810px;
+ }
+ #navContents{
+   width: 100%;
+   justify-content: space-around;
+ }
+
+ #about{
+   background: white;
+   height: 600px;
+ }
+
+#mainMenuItem{
+  color: black;
+  font-weight: 500;
+}
+
+
+ @media screen and (max-width: 990px) {
+  #navContents{
+    width: 100%;
+    align-items: center;
+  }
+}
+
+ .line-1{
+    position: relative;
+    top: 50%;  
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid blue;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: blue;}
+  to{border-right-color: transparent;}
+}
