@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
 
 header {
-     background: linear-gradient(transparent, transparent 90%, white), url("images/main.jpg"); 
+     background:url("images/main.jpg"); 
     background-position: center; 
     background-size: cover;
     position: relative;
@@ -22,11 +22,20 @@ header {
   font-weight: 500;
 }
 
-
+#skill-card{
+  width: 30%;
+}
  @media screen and (max-width: 990px) {
   #navContents{
     width: 100%;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #skill-card{
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
