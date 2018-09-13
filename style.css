@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
 
 header {
-     background:url("images/main.jpg"); 
+    background:url("images/main.jpg"); 
     background-position: center; 
     background-size: cover;
     position: relative;
