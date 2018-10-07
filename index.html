@@ -21,57 +21,77 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    
 </head>
 <body>
-        
     <header id="home">
       
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav id="mynav" class="navbar navbar-expand-lg navbar-dark smooth-scroll" style="position:fixed;">
           <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#fd5c63; opacity: 0.8; float: right;">
+              <span class="navbar-toggler-icon" style="color:white;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div id="navContents"class="navbar-nav mx-auto">
-                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">About</a>
-                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">Experience</a>
+                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">Home</a>
+                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#about">About</a>
+                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#experience">Experience</a>
+                <a class="nav-item nav-link p-3" id="mainMenuItem" href="#projects">Projects</a>
                 <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">Resume</a>
                 <a class="nav-item nav-link p-3" id="mainMenuItem" href="#">Contact</a>
               </div>
             </div>
         </div>
       </nav>
-            <!-- <p class="line-1 anim-typewriter">Hey, I'm Ricky</p> -->
+            <!-- <p class="line-1 anim-typewriter">Hey, I'm Ricky</p> --> 
+            <div class="row banner">
+              <div class="banner-text">
+                 <h1 class="responsive-headline" style="font-size: 4rem;">RICKY DIEP</h1>
+                 <div id="typed-strings">
+                  <p>I'm an <strong>IT PROFESSIONAL</strong>.</p>
+                  <p>I'm a <strong>WEB DEVELOPER</strong>.</p>
+                  <p>I'm a <Strong id="cuse">SYRACUSE</Strong> alumni.</p>
+                  <p>Thanks for stopping by!</p>
+                 </div>
+                <span id="typed"></span>
+                 <hr>
+                 <ul class="social">
+                    <li><a href="https://www.behance.net/rickydiep"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:rdiep@syr.edu"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rickydiep/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Rdiep78/"><i class="fab fa-github"></i></i></a></li>
+                    <li><a href="skype:live:rdiep78?chat"><i class="fab fa-skype"></i></a></li>
+                 </ul>
+              </div>
+           </div>
     </header>
 
-    <section id="main">
-      <section class="pt-5 my-5" id="=about">
+    <section id="about">
+      <section class="pt-5 my-5">
         <div class="container">
-          <h1 class="text-center pb-3">ABOUT ME</h1>
-          <hr>
+          <h1 id="section-header" class="text-center pb-3">ABOUT ME</h1>
+          <hr id="section-line">
           <p  id="bio" class="py-3 mx-5">Ricky Diep is a recent graduate of Syracuse University with a degree in Systems and Information Science. As an IT professional, he aims to bridge the gap between technological possibilities and people. Using his prior experience in support, UX/UI design, and consulting, he aims to empower others and make technology understandable and readily accessible to all. 
           <br><br>
           Currently, Ricky serves as a support engineer, proactively contributing to product quality enhancements and creating self-help assets to broadly reach more customers. Outside of his role, he enjoys web development and graphic design. </p>
           <div class="row d-flex justify-content-between pt-3 mx-5">
               <div class="card" id="skill-card">
                   <div class="card-body text-center">
-                    <h1 class="card-title"><i class="fa fa-code text-info" aria-hidden="true"></i></h1>
+                    <h1 class="card-title"><i class="fa fa-code" aria-hidden="true"></i></h1>
                     <h4 class="card-text">TECHNICAL</h4>
                     <p class="text-secondary">JAVA &middot; HTML &middot; CSS &middot; JS &middot; SQL</p>
                   </div>
               </div>
                 <div class="card" id="skill-card">
                     <div class="card-body text-center">
-                      <h1 class="card-title"><i class="fa fa-user text-info" aria-hidden="true"></i></h1>
+                      <h1 class="card-title"><i class="fa fa-user" aria-hidden="true"></i></h1>
                       <h4 class="card-text">MANAGEMENT</h4>
                       <p class="text-secondary">Support &middot; JIRA &middot; Office365</p>
                     </div>
                 </div>
                   <div class="card"id="skill-card">
                       <div class="card-body text-center">
-                        <h1 class="card-title"><i class="fa fa-paint-brush text-info" aria-hidden="true"></i></h1>
+                        <h1 class="card-title"><i class="fa fa-paint-brush" aria-hidden="true" style="color: #fd5c63"></i></h1>
                         <h4 class="card-text">CREATIVE</h4>
                         <p class="text-secondary">Photoshop &middot; Illustrator &middot; MakerBot</p>
                       </div>
@@ -81,31 +101,177 @@
       </section>
       <section class="pt-5 my-5" id="experience">
           <div class="container">
-            <h1 class="text-center pb-3">EXPERIENCE</h1>
-            <hr>
-                  <div class="card pt-3 mx-5" >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="column" style="width:10%;"> 
-                             <img class="mx-lg-4" src="images/msft.png" alt="Microsoft Logo" height="50px" width="50px">      
-                          </div>
-                         <div class="column"style="width:90%;"> 
-                          <h5>Microsoft</h5><h6>Support Engineer</h6><p class="text-secondary font-italic mb-1">July 2018 - Present</p><p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas ipsa unde nisi ad suscipit. Doloremque, expedita hic sunt veniam tempore veritatis repellendus nemo quia repellat architecto iste dignissimos aperiam maxime iusto dolorum facere voluptas. Illum pariatur maxime, ex impedit doloribus repellat dolorum rerum earum iusto omnis? Odio, distinctio explicabo.
-                          </p> 
-                         </div>
-                        </div>
-                      </div>
+            <h1 id="section-header" class="text-center pb-3">EXPERIENCE</h1>
+            <hr id="section-line">
+            <div id="accordion" class="pt-2">
+              <div class="card mx-5 my-3">
+                <div class="card-header bg-white" id="headingMsft" style="padding:0">
+                  <div class="mb-0 row">
+                    <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/msft.png" width="50px" height="50px"><h5 class="mt-3">Microsoft<br><p class="font-weight-normal pt-2" style="font-size:15px;">July 2018 - Present</p></h5></p>
                   </div>
+                  <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3 "><button class="text-black btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseMsft" aria-expanded="true" aria-controls="collapseMsft">
+                      Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </button></p>
+                </div>
+            
+                <div id="collapseMsft" class="collapse" aria-labelledby="headingMsft" data-parent="#accordion">
+                  <div class="card-body">
+                    <h5>Support Engineer | Exchange On-Premise</h5>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-5 my-3">
+                  <div class="card-header bg-white" id="headingCuse" style="padding:0">
+                    <div class="mb-0 row">
+                      <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/cuse.png" width="50px" height="50px"><h5 class="mt-3">Syracuse University<br><p class="font-weight-normal pt-2" style="font-size:15px;">August 2014 - May 2018</p></h5></p>
+                    </div>
+                    <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3"><button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseCuse" aria-expanded="true" aria-controls="collapseCuse">
+                        Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                      </button></p>
+                  </div>
+                <div id="collapseCuse" class="collapse" aria-labelledby="headingCuse" data-parent="#accordion">
+                  <div class="card-body">
+                      <h5>B.S. in System & Information Science</h5>
+                      <hr>
+                      <h5>Information Technology Services</h5>
+                      <hr>
+                      <div class="mb-0 row">
+                          <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/air-dark.png" width="50px" height="50px"><h5 class="mt-3 text-left">Asian Identity Research Initiative</h5></p>
+                        </div>
+                      <hr>
+                      <div class="mb-0 row">
+                          <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/cityU.png" width="50px" height="50px"><h5 class="mt-3 text-left">City University of Hong Kong</h5></p>
+                      </div>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-5 my-3">
+                  <div class="card-header bg-white" id="headingEY" style="padding:0">
+                    <div class="mb-0 row">
+                      <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/ey.png" width="50px" height="50px"><h5 class="mt-3">Ernst & Young<br><p class="font-weight-normal pt-2" style="font-size:15px;">June 2017 - August 2017</p></h5></p>
+                    </div>
+                    <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3"><button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseEY" aria-expanded="true" aria-controls="collapseEY">
+                        Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                      </button></p>
+                  </div>
+                <div id="collapseEY" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                      <h5>Data Analyst Intern</h5>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-5 my-3">
+                  <div class="card-header bg-white" id="headingEze" style="padding:0">
+                    <div class="mb-0 row">
+                      <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/eze.png" width="50px" height="50px"><h5 class="mt-3">Eze Software Group<br><p class="font-weight-normal pt-2" style="font-size:15px;">April 2017 - May 2017</p></h5></p>
+                    </div>
+                    <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3"><button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseEze" aria-expanded="true" aria-controls="collapseEze">
+                        Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                      </button></p>
+                  </div>
+                <div id="collapseEze" class="collapse" aria-labelledby="headingEze" data-parent="#accordion">
+                  <div class="card-body">
+                      <h5>Sales Intern</h5>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-5 my-3">
+                  <div class="card-header bg-white" id="headingEpa" style="padding:0">
+                    <div class="mb-0 row">
+                      <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/epa.jpeg" width="50px" height="50px"><h5 class="mt-3">US Environmental Protection Agency<br><p class="font-weight-normal pt-2" style="font-size:15px;">October 2016 - Janurary 2017</p></h5></p>
+                    </div>
+                    <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3"><button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseEpa" aria-expanded="true" aria-controls="collapseEpa">
+                        Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                      </button></p>
+                  </div>
+                <div id="collapseEpa" class="collapse" aria-labelledby="headingEpa" data-parent="#accordion">
+                  <div class="card-body">
+                      <h5>Web Developer Intern</h5>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-5 my-3">
+                  <div class="card-header bg-white" id="headingGE" style="padding:0">
+                    <div class="mb-0 row">
+                      <p class="mt-3 ml-sm-3"><img class="mx-3 mb-0" src="images/GE.png" width="50px" height="50px"><h5 class="mt-3">General Electric<br><p class="font-weight-normal pt-2" style="font-size:15px;">May 2016 - August 2016</p></h5></p>
+                    </div>
+                    <p id="showbtn" class="text-sm-right mb-0 pb-1 mr-3"><button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseGE" aria-expanded="true" aria-controls="collapseGE">
+                        Show More   <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                      </button></p>
+                  </div>
+                <div id="collapseGE" class="collapse" aria-labelledby="headingGE" data-parent="#accordion">
+                  <div class="card-body">
+                      <h5>DevOps Intern</h5>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
+      <section class="pt-5 my-5" id="projects">
+        <div class="container">
+            <h1 id="section-header" class="text-center pb-3">PROJECTS</h1>
+            <hr id="section-line">
+            <div class="row d-flex justify-content-between pt-3 mx-5">
+                <div class="card mb-4" id="project-card">
+                    <img class="card-img-top" src="images/personal-website.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5>Personal Website</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" id="project-card">
+                      <img class="card-img-top" src="images/air-website.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5>Asian Identity Research Initiative</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                  </div>
+                <div class="card mb-4" id="project-card">
+                      <img class="card-img-top" src="images/lambdas-website.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5>Syracuse Lambda Phi Epsilon</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                </div>
+            </div>
+            <div class="row  d-flex justify-content-between pt-3 mx-5">
+                <div class="card mb-4" id="project-card">
+                    <img class="card-img-top" src="images/jessicajones-ps.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5>Netflix Redesign</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" id="project-card">
+                      <img class="card-img-top" src="images/lambdas-website.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                  </div>
+                <div class="card mb-4" id="project-card">
+                      <img class="card-img-top" src="images/coinstash-website.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5>CoinStash</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
     </section>
 
-   
-
-    <script src="file.js"></script>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="typed.js"></script>
   </body>
 </html>

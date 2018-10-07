@@ -1,67 +1,162 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
+html, body{
+  scroll-behavior: smooth;
+}
 
 header {
     background:url("images/main.jpg"); 
     background-position: center; 
     background-size: cover;
-    position: relative;
     height: 810px;
+ }
+ header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 40px ;
+  text-align: center;
+}
+
+header .banner-text { width: 100%; padding-top: 24rem; }
+header .banner-text h1 {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  letter-spacing: 5px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+header .banner-text h3 {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+  color: #fff;
+}
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #fd5c63;
+  opacity: .4;
+}
+#section-line{
+  border-color: #fd5c63;
+  opacity: 0.3;
+}
+#typed, .typed-cursor{ 
+  color: gainsboro;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#typed strong{
+  color: #fd5c63;
+}
+#typed #cuse{
+  color: #d44500;
+}
+/* header social links */
+header .social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .social li a { color: #fff; transition: 0.4s;}
+header .social li a:hover { color: #fd5c63; }
+
+ .navbar {
+  z-index: 1000;
+  width: 100%;
  }
  #navContents{
    width: 100%;
    justify-content: space-around;
  }
 
- #about{
-   background: white;
-   height: 600px;
- }
-
 #mainMenuItem{
   color: black;
   font-weight: 500;
+  transition: 0.4s;
+} 
+#mainMenuItem:hover{
+  color:#fd5c63 ;
 }
 
+section div.container{
+  padding-top: 40px;
+}
+#section-header{
+  color: #fd5c63;
+}
+#about{
+  background: white;
+  height: 600px;
+}
+#skill-card h1 i{
+  color: #fd5c63;
+}
+#experience button{
+  color: #fd5c63;
+  text-decoration: none;
+}
 #skill-card{
   width: 30%;
 }
+
+#accordion .card{
+  border: 1px solid transparent;
+}
+
+#skill-card h4{
+  font-size: 1rem;
+}
+#project-card{
+  width: 30%;
+}
+
+
  @media screen and (max-width: 990px) {
   #navContents{
     width: 100%;
     align-items: center;
+    background: white;
   }
 }
 
+@media screen and (max-width: 575px){
+  .mb-0.row{
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  #showbtn{
+    text-align: center;
+  }
+  h5.mt-3{
+    font-size: 20px;
+  }
+  #h5.accordian{
+    text-align: center;
+  }
+
+  header .social{
+    font-size: 1.5rem;
+  }
+  
+}
 @media screen and (max-width: 1200px) {
-  #skill-card{
+  #skill-card, #project-card{
     width: 100%;
     margin-bottom: 20px;
   }
-}
-
- .line-1{
-    position: relative;
-    top: 50%;  
-    width: 20em;
-    margin: 0 auto;
-    border-right: 2px solid blue;
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: blue;}
-  to{border-right-color: transparent;}
 }
