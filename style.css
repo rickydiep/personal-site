@@ -7,7 +7,7 @@ header {
     background:url("images/main.jpg"); 
     background-position: center; 
     background-size: cover;
-    height: 810px;
+    height: 950px;
  }
  header .banner {
   display: inline-block;
@@ -37,6 +37,10 @@ header .banner-text h3 {
 header .banner-text h3 span,
 header .banner-text h3 a {
   color: #fff;
+}
+
+h5{
+  font-size: 1rem;
 }
 header .banner-text hr {
   width: 60%;
@@ -124,6 +128,20 @@ section div.container{
   width: 30%;
 }
 
+
+@media screen and (max-width: 1000px) {
+  #aboutRow{
+    flex-direction: column;
+    align-items: center;
+  }
+  #aboutRow img{
+    margin-bottom: 30px;
+  }
+
+  #aboutRow div{
+    padding: 0;
+  }
+}
 
  @media screen and (max-width: 990px) {
   #navContents{
