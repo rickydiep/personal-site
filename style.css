@@ -132,7 +132,6 @@ section div.container{
 @media screen and (max-width: 1000px) {
   #aboutRow{
     flex-direction: column;
-    align-items: center;
   }
   #aboutRow img{
     margin-bottom: 30px;
@@ -140,6 +139,7 @@ section div.container{
 
   #aboutRow div{
     padding: 0;
+    text-align: center;
   }
 }
 

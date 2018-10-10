@@ -34,7 +34,19 @@ $(document).ready(function(){
         cursorChar: '|',
         autoInsertCss: true
       });
-    
+
+
+      $('ev.currentTarget').click(function(){
+		var $this = $(this);
+		$this.toggleClass('SeeMore');
+		if($this.hasClass('SeeMore')){
+            console.log(this)
+			$this.html('<button class="SeeMore text-black btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseMsft" aria-expanded="true" aria-controls="collapseMsft">Less  <i class="fa fa-angle-double-down" aria-hidden="true"></i></button>');	
+		} else {
+            console.log(this)
+            $this.html('<button class="SeeMore text-black btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseMsft" aria-expanded="true" aria-controls="collapseMsft">Show More   <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>');		
+		}
+	});
  });
 
 
