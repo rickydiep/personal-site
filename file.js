@@ -36,15 +36,15 @@ $(document).ready(function(){
       });
 
 
-      $('ev.currentTarget').click(function(){
+      $('.SeeMore').click(function(){
 		var $this = $(this);
 		$this.toggleClass('SeeMore');
 		if($this.hasClass('SeeMore')){
             console.log(this)
-			$this.html('<button class="SeeMore text-black btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseMsft" aria-expanded="true" aria-controls="collapseMsft">Less  <i class="fa fa-angle-double-down" aria-hidden="true"></i></button>');	
+			$this.text('Show More   ').append('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');	
 		} else {
             console.log(this)
-            $this.html('<button class="SeeMore text-black btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseMsft" aria-expanded="true" aria-controls="collapseMsft">Show More   <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>');		
+            $this.html('Less   ').append('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');;		
 		}
 	});
  });
