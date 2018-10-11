@@ -5,20 +5,21 @@ $(document).ready(function(){
     var startchange = $('#about');
     var offset = startchange.offset();
     if (startchange.length){
-    $(document).scroll(function() { 
-       scroll_start = $(this).scrollTop();
-       if(scroll_start > offset.top-80) {
-        $('#mynav').css('visibility', 'visible');
-           $("#mynav").css('background-color', '#f0f0f0');
-        } else if(scroll_start == 0){
-            $('#mynav').css('visibility', 'visible');
-            $('#mynav').css('background-color', 'transparent');
-        }
-         else{
-            $('#mynav').css('visibility', 'hidden');
-        }
-    });
-     }
+        $(document).scroll(function() { 
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top-80) {
+            $('#mynav').css('opacity', '1');
+            $("#mynav").css('background-color', '#f0f0f0');
+            } else if(scroll_start == 0){
+                $('#mynav').css('opacity', '1');
+                $('#mynav').css('background-color', 'transparent');
+                
+            }
+            else{
+                $('#mynav').css('opacity', '0');
+            }
+        });
+    }
     $('#navContents a').on('click', function(){
         $('#navbarNavAltMarkup').removeClass('show');
     });
@@ -41,7 +42,7 @@ $(document).ready(function(){
 		$this.toggleClass('SeeMore');
 		if($this.hasClass('SeeMore')){
             console.log(this)
-			$this.text('Show More   ').append('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');	
+			$this.text('Show More   ').append('<i class="fa fa-angle-double-down" aria-hidden="true"></i>');	
 		} else {
             console.log(this)
             $this.html('Less   ').append('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');;		

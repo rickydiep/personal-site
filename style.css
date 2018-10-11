@@ -81,6 +81,8 @@ header .social li a:hover { color: #fd5c63; }
  .navbar {
   z-index: 1000;
   width: 100%;
+  transition: background-color 200ms linear;
+  transition: opacity 200ms linear;
  }
  #navContents{
    width: 100%;
@@ -121,12 +123,13 @@ section div.container{
   border: 1px solid transparent;
 }
 
-#skill-card h4{
+#skill-card h4, #project-card p{
   font-size: 1rem;
 }
 #project-card{
   width: 30%;
 }
+#project-card h5{text-align: center; font-size: 1rem;}
 
 
 @media screen and (max-width: 1000px) {
