@@ -148,16 +148,12 @@ footer a:hover {
   text-decoration: none;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 footer .social:hover a {
   opacity: 0.4;
 }
 footer .social:hover li:hover a:hover {
   opacity: 1;
 }
-
->>>>>>> 2919bb04db08670e6e81475caa9cb2a6d58ad801
 
 @media screen and (max-width: 1000px) {
   #aboutRow{
