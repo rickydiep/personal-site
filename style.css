@@ -138,10 +138,16 @@ footer{
   opacity: 1;
   color: white;
 }
-footer p{
-  font-size: .8rem;
+footer a p{
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  line-height: 2.2;
 }
-
+footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
 footer .social:hover a {
   opacity: 0.4;
 }
