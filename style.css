@@ -64,23 +64,24 @@ header .banner-text hr {
   color: #d44500;
 }
 /* header social links */
-header .social {
+header .social, footer .social {
   margin: 24px 0;
   padding: 0;
-  font-size: 30px;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+  font-size: 1.8rem;
 }
-header .social li {
+header .social li{
   display: inline-block;
   margin: 0 15px;
   padding: 0;
 }
-header .social li a { color: #fff; transition: 0.4s;}
-header .social li a:hover { color: #fd5c63; }
+header .social li a, footer .social li a { color: #fff; transition: 0.4s;}
+header .social li a:hover, footer .social li a:hover{ color: #fd5c63; }
 
  .navbar {
   z-index: 1000;
   width: 100%;
+  transition: background-color 200ms linear;
+  transition: opacity 200ms linear;
  }
  #navContents{
    width: 100%;
@@ -121,14 +122,25 @@ section div.container{
   border: 1px solid transparent;
 }
 
-#skill-card h4{
+#skill-card h4, #project-card p{
   font-size: 1rem;
 }
 #project-card{
   width: 30%;
 }
+#project-card h5{text-align: center; font-size: 1rem;}
 
-
+footer{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background-color: #fd5c63;
+  opacity: 1;
+  color: white;
+}
+footer p{
+  font-size: .8rem;
+}
 @media screen and (max-width: 1000px) {
   #aboutRow{
     flex-direction: column;
