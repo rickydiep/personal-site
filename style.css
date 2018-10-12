@@ -127,6 +127,12 @@ section div.container{
 #project-card{
   width: 30%;
 }
+#project-card p{
+  font-size: .8rem;
+}
+#project-card h6{
+  text-align: center;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -170,6 +176,7 @@ section div.container{
   header .social{
     font-size: 1.5rem;
   }
+  #experience p{font-size: 0.8rem;}
   
 }
 @media screen and (max-width: 1200px) {
