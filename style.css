@@ -75,7 +75,7 @@ header .social li{
   padding: 0;
 }
 header .social li a, footer .social li a { color: #fff; transition: 0.4s;}
-header .social li a:hover, footer .social li a:hover{ color: #fd5c63; }
+header .social li a:hover{ color: #fd5c63; }
 
  .navbar {
   z-index: 1000;
@@ -141,6 +141,7 @@ footer{
 footer p{
   font-size: .8rem;
 }
+
 @media screen and (max-width: 1000px) {
   #aboutRow{
     flex-direction: column;
