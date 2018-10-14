@@ -20,10 +20,12 @@ $(document).ready(function(){
             }
         });
     }
+    //remove mobile nav after click
     $('#navContents a').on('click', function(){
         $('#navbarNavAltMarkup').removeClass('show');
     });
 
+    //home page type writer effect
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         loop:Infinity,
@@ -36,7 +38,7 @@ $(document).ready(function(){
         autoInsertCss: true
       });
 
-
+      //Experience See More / Less button
       $('.SeeMore').click(function(){
 		var $this = $(this);
 		$this.toggleClass('SeeMore');
