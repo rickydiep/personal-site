@@ -272,6 +272,7 @@ footer .social:hover li:hover a:hover {
   .hovereffect h2 {
     font-weight: 900;
     color: rgba(240, 240, 240);
+    font-size: 1rem;
   }
 }
 
