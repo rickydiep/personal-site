@@ -281,7 +281,7 @@ footer .social:hover li:hover a:hover {
   #navContents{
     width: 100%;
     align-items: center;
-    background: white;
+    background: rgb(240,240,240);
   }
 }
 
