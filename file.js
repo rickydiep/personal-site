@@ -44,10 +44,11 @@ $(document).ready(function(){
 		$this.toggleClass('SeeMore');
 		if($this.hasClass('SeeMore')){
             console.log(this)
-			$this.text('Show More');	
+            $this.text('Show More   ');	
 		} else {
             console.log(this)
-            $this.html('Less');		
+            $this.prev().html('Show More   ');
+            $this.html('Less   ');	
 		}
 	});
  });
